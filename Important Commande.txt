@@ -1,0 +1,10 @@
+
+py -3 -m venv .venv
+.venv\scripts\activate
+
+eventually : 
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+python -m pip install matplotlib
+if error do first :
+pip install wheel
